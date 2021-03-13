@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.770
+Choosing a good data structure to solve
+
+00:00:02.770 --> 00:00:06.535
+a hard problem actually requires you to do a lot of things well.
+
+00:00:06.535 --> 00:00:08.925
+First, you have to define the problem well.
+
+00:00:08.925 --> 00:00:12.510
+Then, you have to understand the data structures you have available to you,
+
+00:00:12.509 --> 00:00:14.564
+like lists, dictionaries and sets.
+
+00:00:14.564 --> 00:00:17.370
+As well as their trade offs and their limitations.
+
+00:00:17.370 --> 00:00:20.595
+Then, you have to choose a good data structure to actually represent the problem,
+
+00:00:20.594 --> 00:00:24.899
+so that you can then write a good algorithm that actually solves it. And that's a lot.
+
+00:00:24.899 --> 00:00:28.349
+And it takes a lot of practice before any of this becomes easy.
+
+00:00:28.350 --> 00:00:30.435
+As you continue through this narrow degree,
+
+00:00:30.434 --> 00:00:33.629
+I really want to encourage you to actively think about the algorithms
+
+00:00:33.630 --> 00:00:36.876
+you write and the data structures you're choosing to use.
+
+00:00:36.875 --> 00:00:38.329
+When you find yourself uncertain,
+
+00:00:38.329 --> 00:00:41.339
+it's really helpful to talk about these things with other people.
+
+00:00:41.340 --> 00:00:44.070
+So, use the Noon Degrees Slide Channel, ask questions,
+
+00:00:44.070 --> 00:00:47.109
+and get involved in discussions about all the new concepts you're.
+
