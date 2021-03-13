@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.003
+You've been building up a solid foundation of programming and data analysis skills.
+
+00:00:05.003 --> 00:00:07.500
+And in this section, I'm excited to introduce you to
+
+00:00:07.500 --> 00:00:10.590
+one more self-driving car tool, computer vision.
+
+00:00:10.590 --> 00:00:12.450
+Computer vision is how machines,
+
+00:00:12.450 --> 00:00:16.140
+like self-driving cars, visually perceive the world and respond to it.
+
+00:00:16.140 --> 00:00:18.090
+Imagine that you're driving a car.
+
+00:00:18.090 --> 00:00:20.890
+You have to use your senses to notice pedestrians,
+
+00:00:20.890 --> 00:00:24.800
+other cars, bicyclists, and all the road and traffic markings around you.
+
+00:00:24.800 --> 00:00:28.060
+This is similar to how a self-driving car sees the world.
+
+00:00:28.060 --> 00:00:31.390
+It gathers data through cameras and other sensors and then
+
+00:00:31.390 --> 00:00:35.190
+uses that input to safely navigate and move through the world.
+
+00:00:35.190 --> 00:00:38.710
+In this lesson, we'll learn about common computer vision techniques that are
+
+00:00:38.710 --> 00:00:42.970
+used to analyze camera images and extract important information from them,
+
+00:00:42.970 --> 00:00:45.610
+like the color or shape of different objects.
+
+00:00:45.610 --> 00:00:47.290
+We'll also briefly talk about
+
+00:00:47.290 --> 00:00:50.800
+machine learning and how it's used in combination with computer vision
+
+00:00:50.800 --> 00:00:53.170
+to give machines away to learn from data and
+
+00:00:53.170 --> 00:00:56.450
+recognize patterns in images. Let's get started.
+

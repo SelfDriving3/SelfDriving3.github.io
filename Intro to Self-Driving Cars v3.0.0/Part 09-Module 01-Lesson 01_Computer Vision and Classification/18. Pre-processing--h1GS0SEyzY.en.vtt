@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.990
+Now that you know how images are represented as a grades of numerical values.
+
+00:00:04.990 --> 00:00:09.225
+Let's talk about the next step and our classification pipeline, Pre-processing.
+
+00:00:09.225 --> 00:00:13.155
+Pre-processing images is all about standardizing input images,
+
+00:00:13.155 --> 00:00:17.790
+so that you can move further along the pipeline and analyze images in the same way.
+
+00:00:17.790 --> 00:00:21.060
+The most common pre-processing steps include, one,
+
+00:00:21.060 --> 00:00:23.490
+changing how an image looks spatially by
+
+00:00:23.490 --> 00:00:26.335
+using geometric transforms which can scale an image,
+
+00:00:26.335 --> 00:00:29.840
+rotate it, or even change how far away an object appears.
+
+00:00:29.840 --> 00:00:32.115
+And two, changing color schemes,
+
+00:00:32.115 --> 00:00:36.140
+like choosing to use grayscale images over color images.
+
+00:00:36.140 --> 00:00:40.095
+It's easy to see how these transformations are useful in an example.
+
+00:00:40.095 --> 00:00:41.730
+Let's say, we're trying to build
+
+00:00:41.730 --> 00:00:45.495
+a traffic sign classifier that recognizes two types of image data.
+
+00:00:45.495 --> 00:00:50.965
+Stop signs, and not stop signs are classification pipeline might look like this.
+
+00:00:50.965 --> 00:00:52.545
+Take a look at the input image,
+
+00:00:52.545 --> 00:00:55.675
+and count up the number of red pixels in the image.
+
+00:00:55.675 --> 00:00:59.685
+If there are a lot above some threshold numbers say 300 pixels,
+
+00:00:59.685 --> 00:01:01.985
+then we'll label it as a stop sign.
+
+00:01:01.985 --> 00:01:04.305
+But if there are not enough red pixels,
+
+00:01:04.305 --> 00:01:07.350
+we'll label the image as not stop sign.
+
+00:01:07.350 --> 00:01:09.165
+Now for this to work on any image,
+
+00:01:09.165 --> 00:01:12.540
+we need to have a consistent measure for the color red.
+
+00:01:12.540 --> 00:01:16.905
+We can't just sum up grayscale pixel values in one image and RGB in another,
+
+00:01:16.905 --> 00:01:20.310
+we need to convert these images to be in the same color space.
+
+00:01:20.310 --> 00:01:24.750
+And use the same measure for red pixels as we analyze each image.
+
+00:01:24.750 --> 00:01:27.660
+It will also be useful to have images of the same size.
+
+00:01:27.660 --> 00:01:31.050
+Since we're planning on counting up red values, pixel by pixel.
+
+00:01:31.050 --> 00:01:33.210
+So standardizing the color and shape of
+
+00:01:33.210 --> 00:01:36.890
+each input image is a necessary step in reaching the end goal.
+
+00:01:36.890 --> 00:01:41.040
+Recognizing important patterns in image data and classifying the images.
+

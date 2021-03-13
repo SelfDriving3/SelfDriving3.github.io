@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.759
+A great way to learn a variety of
+
+00:00:02.759 --> 00:00:06.389
+computer vision techniques is by building an image classifier.
+
+00:00:06.389 --> 00:00:08.744
+A lot of what we'll focus on in this lesson,
+
+00:00:08.744 --> 00:00:10.750
+is grouping image data into classes;
+
+00:00:10.750 --> 00:00:12.734
+like humans, bikes and cars,
+
+00:00:12.734 --> 00:00:15.660
+or images taken during the day versus at night.
+
+00:00:15.660 --> 00:00:19.155
+And some of these classification tasks are quite challenging.
+
+00:00:19.155 --> 00:00:23.070
+We'll be exploring two main ways to separate this data: by
+
+00:00:23.070 --> 00:00:26.612
+programming explicit rules that separate data into groups,
+
+00:00:26.612 --> 00:00:28.289
+or by machine learning techniques,
+
+00:00:28.289 --> 00:00:31.019
+that can automatically separate this data.
+
+00:00:31.019 --> 00:00:34.500
+Both approaches can be used to build an image classifier.
+
+00:00:34.500 --> 00:00:37.859
+So what exactly is an image classifier?
+
+00:00:37.859 --> 00:00:41.729
+An image classifier is an algorithm that takes in an image as
+
+00:00:41.729 --> 00:00:46.064
+input and outputs a label or a class that identifies that image.
+
+00:00:46.064 --> 00:00:50.489
+For example, one type of classifier used in self-driving cars will look at
+
+00:00:50.490 --> 00:00:54.840
+different images of roads and be able to identify whether that road contains humans,
+
+00:00:54.840 --> 00:00:56.200
+cars, bikes and so on,
+
+00:00:56.200 --> 00:01:00.370
+distinguishing and classifying each image based on its contents.
+
+00:01:00.369 --> 00:01:03.799
+And there are many types of classifiers used to recognize
+
+00:01:03.799 --> 00:01:09.117
+specific objects or even behaviors like whether a person is walking or running.
+
+00:01:09.117 --> 00:01:12.454
+But all these classifiers involve a similar series of steps.
+
+00:01:12.454 --> 00:01:16.564
+I'll refer to these steps as part of the image classification pipeline.
+
+00:01:16.564 --> 00:01:21.094
+First, a computer receives visual input from an imaging device like a camera.
+
+00:01:21.094 --> 00:01:25.189
+This is typically captured as an image or a sequence of images.
+
+00:01:25.189 --> 00:01:27.079
+Each image is then sent through
+
+00:01:27.079 --> 00:01:31.159
+some pre-processing steps whose purpose is to standardize each image.
+
+00:01:31.159 --> 00:01:34.369
+Common pre-processing steps include resizing an image,
+
+00:01:34.370 --> 00:01:36.335
+or rotating it to change its shape.
+
+00:01:36.334 --> 00:01:40.714
+Or transforming the image from one color to another like from color to gray scale.
+
+00:01:40.715 --> 00:01:42.950
+Only by standardizing each image,
+
+00:01:42.950 --> 00:01:44.975
+for example making them the same size,
+
+00:01:44.974 --> 00:01:48.859
+can you then compare them and further analyze them in the same way.
+
+00:01:48.859 --> 00:01:51.019
+Next, we extract features.
+
+00:01:51.019 --> 00:01:53.375
+Features are what help us define certain objects.
+
+00:01:53.375 --> 00:01:56.674
+And they're usually information about object, shape, or color.
+
+00:01:56.674 --> 00:01:59.974
+Some features that distinguish a car from a bicycle,
+
+00:01:59.974 --> 00:02:02.689
+are that a car is usually a much larger shape,
+
+00:02:02.689 --> 00:02:05.578
+and it has four wheels instead of two.
+
+00:02:05.578 --> 00:02:08.750
+The shape and wheels would be distinguishing features for a car.
+
+00:02:08.750 --> 00:02:11.949
+And we'll talk more about features later in this lesson.
+
+00:02:11.949 --> 00:02:15.609
+And finally these features are fed into a classification algorithm,
+
+00:02:15.610 --> 00:02:17.626
+also referred to as a model,
+
+00:02:17.626 --> 00:02:19.641
+that classifies the image.
+
+00:02:19.641 --> 00:02:21.310
+This step looks at any features from
+
+00:02:21.310 --> 00:02:25.150
+the previous step and predicts whether say this image is of a car,
+
+00:02:25.150 --> 00:02:27.640
+or a pedestrian, or a bike and so on.
+
+00:02:27.639 --> 00:02:29.439
+You'll be programming each of
+
+00:02:29.439 --> 00:02:33.534
+these classification steps manually so that you really understand each step.
+
+00:02:33.534 --> 00:02:35.365
+And by the end of this lesson you'll have
+
+00:02:35.365 --> 00:02:38.200
+all the skills you'll need to complete the final project,
+
+00:02:38.199 --> 00:02:41.379
+building a traffic light classifier which takes in images of
+
+00:02:41.379 --> 00:02:44.740
+traffic lights and separates them into three classes: red,
+
+00:02:44.740 --> 00:02:46.659
+yellow, or green lights.
+
